@@ -1,25 +1,25 @@
 # PortalDex
 
-Aplicación web desarrollada con React, Vite y Tailwind CSS para explorar
+Aplicacion web desarrollada con React, Vite y Tailwind CSS para explorar
 personajes del universo de Rick and Morty.
 
 ## Funciones
 
-- Búsqueda de personajes por nombre.
+- Busqueda de personajes por nombre.
 - Carga incremental de resultados.
 - Vista detallada de cada personaje.
 - Favoritos almacenados en el navegador.
-- Diseño adaptable a dispositivos móviles.
+- Diseno adaptable a dispositivos moviles.
 
 ## API
 
-La información es proporcionada por
+La informacion es proporcionada por
 [The Rick and Morty API](https://rickandmortyapi.com/).
 
 Consulta su
-[documentación oficial](https://rickandmortyapi.com/documentation).
+[documentacion oficial](https://rickandmortyapi.com/documentation).
 
-## Ejecución
+## Ejecucion
 
 ```bash
 npm install
