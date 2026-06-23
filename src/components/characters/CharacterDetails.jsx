@@ -1,4 +1,5 @@
 import {
+  Activity,
   CalendarDays,
   Clapperboard,
   Dna,
@@ -66,12 +67,6 @@ export function CharacterDetails({
             {character.type && ` · ${character.type}`}
           </p>
 
-          <span
-            className={`mt-4 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-xs font-bold ${status.badge}`}
-          >
-            <span className={`size-2 rounded-full ${status.dot}`} />
-            {status.label}
-          </span>
         </div>
 
         <div className="p-5 sm:p-8">
@@ -80,6 +75,7 @@ export function CharacterDetails({
           </h2>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <PropertyCard icon={Activity} label="Estado" value={status.label} />
             <PropertyCard
               icon={UserRound}
               label="Género"

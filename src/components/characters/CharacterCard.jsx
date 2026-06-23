@@ -1,5 +1,4 @@
 import { Eye, Heart, MapPin } from 'lucide-react'
-import { getStatusStyle } from '../../utils/characterFormatters'
 
 export function CharacterCard({
   character,
@@ -7,8 +6,6 @@ export function CharacterCard({
   onFavorite,
   onSelect,
 }) {
-  const status = getStatusStyle(character.status)
-
   return (
     <article className="group overflow-hidden rounded-3xl border border-white/10 bg-slate-900 transition duration-300 hover:-translate-y-1 hover:border-lime-400/30 hover:shadow-2xl hover:shadow-lime-950/30">
       <div className="relative aspect-square overflow-hidden bg-slate-800">
@@ -19,12 +16,6 @@ export function CharacterCard({
           className="size-full object-cover transition duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950 to-transparent" />
-        <span
-          className={`absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-bold backdrop-blur ${status.badge}`}
-        >
-          <span className={`size-2 rounded-full ${status.dot}`} />
-          {status.label}
-        </span>
         <button
           type="button"
           onClick={() => onFavorite(character)}
